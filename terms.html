@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Términos y Condiciones</title>
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <style>
+        .pdf-viewer {
+            width: 100%;
+            height: 100vh; /* Utiliza el 100% de la altura de la ventana de visualización */
+            border: none;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,9 +20,9 @@
     </header>
 
     <!-- Opción con embed -->
-    <embed src="terms.pdf" type="application/pdf" width="100%" height="600px">
+    <embed src="terms.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" class="pdf-viewer">
 
     <!-- Opción con iframe -->
-    <!--<iframe src="terms.pdf" width="100%" height="600px"></iframe>-->
+    <!--<iframe src="terms.pdf#toolbar=0&navpanes=0&scrollbar=0" class="pdf-viewer"></iframe>-->
 </body>
 </html>
