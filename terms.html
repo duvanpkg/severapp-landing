@@ -6,10 +6,21 @@
     <title>Términos y Condiciones</title>
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .pdf-container {
+            width: 100%;
+            height: 100%;
+            overflow: scroll; /* Permite el desplazamiento dentro del contenedor */
+            -webkit-overflow-scrolling: touch; /* Mejora el desplazamiento en iOS */
+        }
         .pdf-viewer {
             width: 100%;
-            height: 100vh; /* Utiliza el 100% de la altura de la ventana de visualización */
-            border: none;
+            height: 100%;
         }
     </style>
 </head>
@@ -19,10 +30,9 @@
         <p><em>Última actualización: 10 de diciembre de 2024</em></p>
     </header>
 
-    <!-- Opción con embed -->
-    <embed src="terms.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" class="pdf-viewer">
-
-    <!-- Opción con iframe -->
-    <!--<iframe src="terms.pdf#toolbar=0&navpanes=0&scrollbar=0" class="pdf-viewer"></iframe>-->
+    <div class="pdf-container">
+        <!-- Opción con iframe -->
+        <iframe src="terms.pdf#toolbar=0&navpanes=0&scrollbar=0" class="pdf-viewer"></iframe>
+    </div>
 </body>
 </html>
