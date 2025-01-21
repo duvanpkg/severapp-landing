@@ -3,8 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redirect to Store</title>
+  <title>Severapp - Elige tu tienda</title>
   <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Severapp - Descarga ahora" />
+  <meta property="og:description" content="Descárgala ahora para disfrutar del mercado estudiantil. Con Severapp, todo lo que necesitas está al alcance de tu mano." />
+  <meta property="og:image" content="https://severapp.com/assets/images/banner.png" />
+  <meta property="og:url" content="https://severapp.com/" />
+  <meta property="og:type" content="website" />
+
   <script>
     // URLs de las tiendas
     const storeUrls = {
@@ -35,10 +43,10 @@
 </head>
 <body class="bg-gray-100 text-gray-800 flex items-center justify-center min-h-screen">
   <div id="store-links" class="hidden text-center space-y-4">
-    <h1 class="text-xl font-semibold">Elige tu tienda</h1>
+    <h1 class="text-2xl font-bold text-gray-700">Descarga Severapp</h1>
     <div class="flex justify-center space-x-6">
       <a href="https://apps.apple.com/co/app/severapp/id6739535859" target="_blank">
-        <img src="https://github.com/user-attachments/assets/3e50d93d-fb39-435c-be6b-337745f7c423" alt="App Store" class="w-30 h-16">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" class="w-30 h-16">
       </a>
       <a href="https://play.google.com/store/apps/details?id=com.severapp" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="w-30 h-16">
@@ -47,6 +55,7 @@
         <img src="https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/tablets/matepad-se/images/hero/appgallery.svg" alt="App Gallery" class="w-30 h-16">
       </a>
     </div>
+    <p class="text-sm text-gray-600">Si no has sido redirigido automáticamente, selecciona una opción de arriba.</p>
   </div>
 </body>
 </html>
