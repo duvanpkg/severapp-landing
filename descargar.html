@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Severapp - Redirección Automática</title>
   <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
   <script>
@@ -16,7 +16,6 @@
     // Redirigir automáticamente según el dispositivo
     function redirectToStore() {
       const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
       if (/iPhone|iPad|iPod/i.test(userAgent)) {
         window.location.href = storeUrls.apple;
       } else if (/Android/i.test(userAgent)) {
@@ -31,6 +30,17 @@
     document.addEventListener("DOMContentLoaded", redirectToStore);
   </script>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Agregar estilos para dispositivos móviles */
+    @media only screen and (max-width: 768px) {
+      body {
+        font-size: 16px;
+      }
+      #store-links {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body class="bg-gray-50 text-gray-800 flex items-center justify-center min-h-screen">
   <div id="store-links" class="hidden text-center space-y-6">
@@ -47,7 +57,7 @@
         <img src="https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/tablets/matepad-se/images/hero/appgallery.svg" alt="App Gallery" class="w-32 md:w-40 mx-auto">
       </a>
     </div>
-    <p class="text-sm text-gray-500">Si no has sido redirigido automáticamente, selecciona una opción de arriba</p>
+    <p class="text-sm text-gray-500">Si no has sido redirigido automáticamente, selecciona una opción de arriba.</p>
   </div>
 </body>
 </html>
