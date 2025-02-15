@@ -1,0 +1,11 @@
+[
+    {
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.severapp",
+        "sha256_cert_fingerprints": ["05:1A:30:0A:B2:0F:2C:03:6B:24:D7:75:03:51:FA:E0:D9:CE:5E:E8"]
+      }
+    }
+  ]
+  
