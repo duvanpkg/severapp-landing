@@ -1,12 +1,18 @@
 {
   "applinks": {
-    "apps": [],
     "details": [
       {
         "appID": "6Q36K77L98.com.severapp.severApp",
         "paths": [
-          "severapp.com/*",
-          "www.severapp.com/",
+          "/post/*",
+          "/user/*",
+          "/share/*",
+          "/g/*",
+          "/c/*",
+          "/account-link/*",
+          "/continue_from_api/*",
+          "/voice",
+          "/",
           "*"
         ]
       }
