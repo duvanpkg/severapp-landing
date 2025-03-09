@@ -11,5 +11,10 @@
         ]
       }
     ]
+  },
+  "webcredentials": {
+    "apps": [
+      "6Q36K77L98.com.severapp.severApp"
+    ]
   }
 }
